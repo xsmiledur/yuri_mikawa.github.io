@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Coloring Drawing System using High-speed Coaxial Control and Active Marking | Yuri Mikawa's Website</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../../img/favicon.png" rel="icon">
+  <link href="../../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../../css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Stanley
+    Template URL: https://templatemag.com/stanley-bootstrap-freelancer-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">YURI MIKAWA</a>
+      </div>
+      <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="../index.html">TOP</a></li>
+              <li><a href="../education.html">Education</a></li>
+              <li><a href="../publication.html">Publication</a></li>
+              <li><a href="../../ja/projects/LaserPainting.html" style="color:pink">JA</a></li>
+          </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <!-- +++++ Welcome Section +++++ -->
+  <!--<div id="ww">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 centered">
+          <img src="../../img/user.jpg" alt="profile" style=" border-radius: 50%; width:  180px; height: 180px;">
+          <h1>Hi, I am Yuri Mikawa!</h1>
+            <p>
+                Yuri Mikawa (三河 祐梨) is currently a doctor course student of Information Physics and Computing, <a href="https://www.i.u-tokyo.ac.jp/" target="_blank" rel="noopener noreferrer">Graduate School of Information Science and Technology, The University of Tokyo</a>.
+                <br/>
+                She belongs to <a href="https://hapislab.org/" target="_blank" rel="noopener noreferrer">Shinoda & Makino Laboratory</a>, and majors in visual information presentation using high-speed control system.
+            </p>
+
+        </div>-->
+        <!-- /col-lg-8 -->
+<!--      </div>-->
+      <!-- /row -->
+    <!--</div>-->
+    <!-- /container -->
+  <!--</div>-->
+  <!-- /ww -->
+
+
+  <!-- +++++ Projects Section +++++ -->
+
+  <div class="container pt">
+
+      <div class="row mt">
+          <div class="col-lg-8 col-lg-offset-2 centered">
+              <h3>Coloring Drawing System using High-speed Coaxial Control and Active Marking</h3>
+              <hr>
+              <!--<p>Show your work here. Dribbble shots from the awesome designer <a href="http://dribbble.com/wanderingbert">David Creighton-Pester</a>.</p>-->
+          </div>
+      </div>
+
+      <div class="row mt centered">
+          <div class="col-lg-12" style="text-align:left">
+              <p>
+                  Recently, coloring drawing system for presenting a pattern on the surface of a dye-coated object using a chemical reaction called chromism, which causes the color of the dye to change by irradiation with light or heat, have been actively researched. Above all, the phenomenon using light irradiation is called photochromism. Since the pattern can be erased and rewritten repeatedly, there are applications such as changing the design and testing the pattern of the object. Furthermore, drawing technology for 3D objects of various shapes is expected to be non-contact printing. However, in the conventional method, the pose recognition method is not suitable for the object to be drawn, and there is a problem of the complicated calibration of the optical system.
+              </p>
+              <p>
+                  In this research, we propose a coloring drawing optical system of laser-camera high-speed coaxial control and active marking that draws multiple rewritable markers onto the object's surface using photochromism for the recognition of the object's dynamic posture and the accurate drawing onto the object's surface, as shown in Fig. 1. Calibration is simplified because the laser drawing position is always fixed within the camera angle of view by laser-camera coaxial control. The drawing area is expanded by drawing multiple dot markers spirally using a laser and two-axis mirror control, centering four initial markers which are manually placed beforehand. Then, the object's posture is estimated using the markers detected in the image processing, and highly accurate drawing of markers and pictures is performed.
+              </p>
+              <p>
+                  Since the camera captures at a high resolution with a narrow angle of view, the marker drawing, detection, and posture estimation is highly accurate. In addition, high-speed processing enables drawing even to the moving object, that is, the posture-changing object, leading to all-around drawing. It was confirmed that the drawing results for both a static and a rotating planar object were highly accurate (Fig. 2), and the drawing for a cylinder (a symmetrical object) was also precise enough (Fig. 3). Because it is possible to pattern 3D symmetrical objects, it is expected to be applied to customized coloring and additional processing of daily necessities such as cups containing glassware.
+              </p>
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 centered">
+              <img class="img-responsive" style="margin: auto;" src="../../img/projects/LaserPainting/img1.png" alt="" />
+              <p>Fig.1 System configuration.</p>
+          </div>
+          <div class="col-lg-4 col-lg-offset-2">
+              <img class="img-responsive" style="margin: auto;" src="../../img/projects/LaserPainting/img2.png" alt="" />
+              <p>
+                  Fig.2 Drawn appearance and evaluation result of plane objects.
+              </p>
+          </div>
+          <div class="col-lg-4">
+              <img class="img-responsive" style="margin: auto;" src="../../img/projects/LaserPainting/img3.png" alt="" />
+              <p>Fig.3 Drawn appearance of a cylinder (a rotationally symmetric object).</p>
+          </div>
+          <div class="col-lg-12" style="text-align:left">
+              <h4>Reference</h4>
+              <ul>
+                  <li>
+                      <b>Yuri Mikawa</b>, Tomohiro Sueishi, Tomohiko Hayakawa, Masatoshi Ishikawa: Laser-based drawing method for posture-free objects by photochromic active marking with high-speed coaxial gaze control, SPIE Photonics West 2020 (San Francisco, California, USA. 2020.02.05)/ Oral Session
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!-- /container -->
+
+
+  <!-- +++++ Footer Section +++++ -->
+
+  <div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>Contact</h4>
+                <p>
+                    mikawa(at)hapis.k.u-tokyo.ac.jp
+                </p>
+            </div>
+            <!-- /col-lg-4 -->
+
+            <div class="col-lg-6">
+                <h4>My Links</h4>
+                <p>
+                    <a href="https://twitter.com/yurimik217">Twitter</a><br />
+                    <a href="https://www.facebook.com/yurimik217/">Facebook</a><br />
+                    <a href="https://xsmiledur8x7.hatenablog.com/">Hatena blog</a>
+                </p>
+            </div>
+            <!-- /col-lg-4 -->
+
+
+        </div>
+    </div>
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+        <p>
+            &copy; Copyrights <strong>Yuri Mikawa</strong>. All Rights Reserved
+        </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/stanley-bootstrap-freelancer-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+        Created with Stanley template by <a href="https://templatemag.com/">TemplateMag</a>
+      </div>
+    </div>
+  </div>
+  <!-- / copyrights -->
+
+  <!-- JavaScript Libraries -->
+  <script src="../../lib/jquery/jquery.min.js"></script>
+  <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../lib/php-mail-form/validate.js"></script>
+  <script src="../../lib/easing/easing.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../../js/main.js"></script>
+
+</body>
+</html>

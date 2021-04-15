@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>High-speed tracking for a dynamic sphere using contour detection | Yuri Mikawa's Website</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../../img/favicon.png" rel="icon">
+  <link href="../../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../../css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Stanley
+    Template URL: https://templatemag.com/stanley-bootstrap-freelancer-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">YURI MIKAWA</a>
+      </div>
+      <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="../index.html">TOP</a></li>
+              <li><a href="../education.html">Education</a></li>
+              <li><a href="../publication.html">Publication</a></li>
+              <li><a href="../../ja/projects/ContourTracking.html" style="color:pink">JA</a></li>
+          </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <!-- +++++ Welcome Section +++++ -->
+  <!--<div id="ww">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 centered">
+          <img src="../../img/user.jpg" alt="profile" style=" border-radius: 50%; width:  180px; height: 180px;">
+          <h1>Hi, I am Yuri Mikawa!</h1>
+            <p>
+                Yuri Mikawa (三河 祐梨) is currently a doctor course student of Information Physics and Computing, <a href="https://www.i.u-tokyo.ac.jp/" target="_blank" rel="noopener noreferrer">Graduate School of Information Science and Technology, The University of Tokyo</a>.
+                <br/>
+                She belongs to <a href="https://hapislab.org/" target="_blank" rel="noopener noreferrer">Shinoda & Makino Laboratory</a>, and majors in visual information presentation using high-speed control system.
+            </p>
+
+        </div>-->
+        <!-- /col-lg-8 -->
+<!--      </div>-->
+      <!-- /row -->
+    <!--</div>-->
+    <!-- /container -->
+  <!--</div>-->
+  <!-- /ww -->
+
+
+  <!-- +++++ Projects Section +++++ -->
+
+  <div class="container pt">
+
+      <div class="row mt">
+          <div class="col-lg-10 col-lg-offset-1 centered">
+              <h3>High-speed tracking for a dynamic sphere using contour detection</h3>
+              <hr>
+              <!--<p>Show your work here. Dribbble shots from the awesome designer <a href="http://dribbble.com/wanderingbert">David Creighton-Pester</a>.</p>-->
+          </div>
+      </div>
+
+      <div class="row mt centered">
+          <div class="col-lg-12" style="text-align:left">
+              <p>
+                  In a previous projection mapping system for a spherical object moving in a wide area, the hand that grasps the sphere or the occlusion of the table at the time of bouncing become noise for the detection, and then dynamic projection mapping is not robust.
+              </p>
+              <p>
+                  We propose a detection algorithm based on RANSAC using contour information. The evaluation experiments showed that the algorithm was fast and accurate, such as a small error in shielding up to 50% of the sphere's contour. It can be said that more robust tracking and dynamic projection were realized than before.
+              </p>
+          </div>
+          </div>
+          <div class="row mt">
+              <div class="col-lg-4 col-lg-offset-2">
+                  <img class="img-responsive" style="margin: auto;" src="../../img/projects/ContourTracking/img1.gif" alt="" />
+                  <p>Fig.1 Dynamic projection mapping continues even during the catch ball thanks to the proposed robust detection algorithm.</p>
+              </div>
+              <div class="col-lg-4">
+                  <img class="img-responsive" style="margin: auto;" src="../../img/projects/ContourTracking/img2.png" alt="" />
+                  <p>Fig.2 The appearance of contour detection．</p>
+              </div>
+          </div>
+          <div class="row mt">
+              <div class="col-lg-12" style="text-align:left">
+                  <h4>References</h4>
+                  <ul>
+                      <li>
+                          <b>三河祐梨</b>，末石智大，石川正俊： 動的プロジェクションマッピングに向けた輪郭情報に基づく高速球体トラッキング， 第22回日本バーチャルリアリティ学会大会論文集, 1E4-03 (2017)
+                      </li>
+                      <li>
+                          Tomohiro Sueishi, Hiromasa Oku, and Masatoshi Ishikawa: Lumipen 2: Dynamic Projection Mapping with Mirror-based Robust High-speed Tracking against Illumination Changes, PRESENCE: Teleoperators and Virtual Environments, MIT Press, Vol. 25, Issue 4, pp. 299-321 (2017)
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  <!-- /container -->
+
+
+  <!-- +++++ Footer Section +++++ -->
+
+  <div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>Contact</h4>
+                <p>
+                    mikawa(at)hapis.k.u-tokyo.ac.jp
+                </p>
+            </div>
+            <!-- /col-lg-4 -->
+
+            <div class="col-lg-6">
+                <h4>My Links</h4>
+                <p>
+                    <a href="https://twitter.com/yurimik217">Twitter</a><br />
+                    <a href="https://www.facebook.com/yurimik217/">Facebook</a><br />
+                    <a href="https://xsmiledur8x7.hatenablog.com/">Hatena blog</a>
+                </p>
+            </div>
+            <!-- /col-lg-4 -->
+
+
+        </div>
+    </div>
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+        <p>
+            &copy; Copyrights <strong>Yuri Mikawa</strong>. All Rights Reserved
+        </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/stanley-bootstrap-freelancer-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+        Created with Stanley template by <a href="https://templatemag.com/">TemplateMag</a>
+      </div>
+    </div>
+  </div>
+  <!-- / copyrights -->
+
+  <!-- JavaScript Libraries -->
+  <script src="../../lib/jquery/jquery.min.js"></script>
+  <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../lib/php-mail-form/validate.js"></script>
+  <script src="../../lib/easing/easing.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../../js/main.js"></script>
+
+</body>
+</html>
