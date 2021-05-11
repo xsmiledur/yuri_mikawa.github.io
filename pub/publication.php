@@ -2,58 +2,39 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Publication | Yuri Mikawa's Website</title>
+  <title>Yuri Mikawa's Website</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
+ <!--Favicons--> 
+<link href="img/favicon.png" rel="icon">
+<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+ <!--Google Fonts--> 
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+ <!--Bootstrap CSS File--> 
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <!--Libraries CSS Files--> 
+<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+ <!--Main Stylesheet File--> 
+<link href="css/style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>-->
+<script src="js/main.js"></script>
+<script src="lib/jeuqey/jquery.js"></script>
+<script src="lib/jeuqey/jquery.min.js"></script>
+ <!--=======================================================
+  Template Name: Stanley
+  Template URL: https://templatemag.com/stanley-bootstrap-freelancer-template/
+  Author: TemplateMag.com
+  License: https://templatemag.com/license/
+=======================================================--> 
 
-  <!-- Favicons -->
-  <link href="../img/favicon.png" rel="icon">
-  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="../css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Template Name: Stanley
-    Template URL: https://templatemag.com/stanley-bootstrap-freelancer-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
 </head>
 
 <body>
-    <!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">YURI MIKAWA</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">TOP</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="publication.html">Publication</a></li>
-                    <li><a href="../en/publication.html" style="color:pink">EN</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
+
+    <div id="header"></div>
 
     <!-- +++++ Welcome Section +++++ -->
 
@@ -233,58 +214,36 @@
         </div>
     <!-- /container -->
     <!-- +++++ Footer Section +++++ -->
+         
+    <div id="foot"></div>
+    
 
-    <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4>Contact</h4>
-                    <p>
-                        <u>yuri_mikawa(at)ipc.i.u-tokyo.ac.jp</u><br />
-                        mikawa(at)hapis.k.u-tokyo.ac.jp
-                    </p>
-                </div>
-                <!-- /col-lg-4 -->
+	<!--<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>-->
+	<script>
+		$(function(){
+            var url = window.location;	
+            //console.log("aaa");
+            //console,log(url);
+        	//var path = url.pathname.split('/'); 
+        	// ↑上記でも同じですが現在ページURLのパス名のみです。？以降の文字列も取得しません。
+        	var path = url.href.split('/');
+        	var _file_name = path.pop();
+            console.log(_file_name);
+            var names = _file_name.split('?');
+            console.log(names);
+            var file_name = names[0];
+            var lang_info = 'en';
+            if (names.length >= 2) {
+                var lang_info = names[1];
+                var langs = lang_info.split('=');
+                lang_info = langs[1];
+            }
+            //console.log(file_name);
+            //console.log(lang_info);
 
-                <div class="col-lg-6">
-                    <h4>My Links</h4>
-                    <p>
-                        <a href="https://twitter.com/yurimik217">Twitter</a><br />
-                        <a href="https://www.facebook.com/yurimik217/">Facebook</a><br />
-                    </p>
-                </div>
-                <!-- /col-lg-4 -->
-
-
-            </div>
-        </div>
-    </div>
-
-    <div id="copyrights">
-        <div class="container">
-            <p>
-                &copy; Copyrights <strong>Yuri Mikawa</strong>. All Rights Reserved
-            </p>
-            <div class="credits">
-                <!--
-                  You are NOT allowed to delete the credit link to TemplateMag with free version.
-                  You can delete the credit link only if you bought the pro version.
-                  Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/stanley-bootstrap-freelancer-template/
-                  Licensing information: https://templatemag.com/license/
-                -->
-                Created with Stanley template by <a href="https://templatemag.com/">TemplateMag</a>
-            </div>
-        </div>
-    </div>
-    <!-- / copyrights -->
-    <!-- JavaScript Libraries -->
-    <script src="../lib/jquery/jquery.min.js"></script>
-    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../lib/php-mail-form/validate.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="../js/main.js"></script>
-
+			$("#header").load("header.php", {filename: file_name, lang: lang_info});
+			$("#foot").load("footer.html", {filename: file_name, lang: lang_info});
+		});
+	</script>
 </body>
 </html>
